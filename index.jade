@@ -1,0 +1,421 @@
+
+
+//- creating my own boilderplate 
+doctype
+html(lang="en")
+  head
+    //- to show you're inserting something
+    title Hannah & Kelvin
+    meta(charset='utf-8')
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content='width=device-width,initial-scale=1.0')
+    link(href='css/materialize.css',rel='stylesheet',type='text/css')
+    link(href='css/unslider.css',rel='stylesheet',type='text/css')
+    link(href='css/unslider-dots.css',rel='stylesheet',type='text/css')
+    
+    link(href='css/style.css',rel='stylesheet',type='text/css')
+    
+    link(rel="apple-touch-icon-precom/icons/posed" sizes="57x57" href="http://hannahandkelvin.wookiestudios.com/icons/apple-touch-icon-57x57.png" )
+    link(rel="apple-touch-icon-precom/icons/posed" sizes="114x114" href="http://hannahandkelvin.wookiestudios.com/icons/apple-touch-icon-114x114.png" )
+    link(rel="apple-touch-icon-precom/icons/posed" sizes="72x72" href="http://hannahandkelvin.wookiestudios.com/icons/apple-touch-icon-72x72.png" )
+    link(rel="apple-touch-icon-precom/icons/posed" sizes="144x144" href="http://hannahandkelvin.wookiestudios.com/icons/apple-touch-icon-144x144.png" )
+    link(rel="apple-touch-icon-precom/icons/posed" sizes="60x60" href="http://hannahandkelvin.wookiestudios.com/icons/apple-touch-icon-60x60.png" )
+    link(rel="apple-touch-icon-precom/icons/posed" sizes="120x120" href="http://hannahandkelvin.wookiestudios.com/icons/apple-touch-icon-120x120.png" )
+    link(rel="apple-touch-icon-precom/icons/posed" sizes="76x76" href="http://hannahandkelvin.wookiestudios.com/icons/apple-touch-icon-76x76.png" )
+    link(rel="apple-touch-icon-precom/icons/posed" sizes="152x152" href="http://hannahandkelvin.wookiestudios.com/icons/apple-touch-icon-152x152.png" )
+    link(rel="icon" type="image/png" href="http://hannahandkelvin.wookiestudios.com/icons/favicon-196x196.png" sizes="196x196" )
+    link(rel="icon" type="image/png" href="http://hannahandkelvin.wookiestudios.com/icons/favicon-96x96.png" sizes="96x96" )
+    link(rel="icon" type="image/png" href="http://hannahandkelvin.wookiestudios.com/icons/favicon-32x32.png" sizes="32x32" )
+    link(rel="icon" type="image/png" href="http://hannahandkelvin.wookiestudios.com/icons/favicon-16x16.png" sizes="16x16" )
+    link(rel="icon" type="image/png" href="http://hannahandkelvin.wookiestudios.com/icons/favicon-128.png" sizes="128x128" )
+    meta(name="application-name" content="Hannah & Kelvin")
+    meta(name="msapplication-TileColor" content="#FFFFFF" )
+    meta(name="msapplication-TileImage" content="http://hannahandkelvin.wookiestudios.com/icons/mstile-144x144.png" )
+    meta(name="msapplication-square70x70logo" content="http://hannahandkelvin.wookiestudios.com/icons/mstile-70x70.png" )
+    meta(name="msapplication-square150x150logo" content="http://hannahandkelvin.wookiestudios.com/icons/mstile-150x150.png" )
+    meta(name="msapplication-wide310x150logo" content="http://hannahandkelvin.wookiestudios.com/icons/mstile-310x150.png" )
+    meta(name="msapplication-square310x310logo" content="http://hannahandkelvin.wookiestudios.com/icons/mstile-310x310.png" )
+    
+    
+  body
+    
+    .navwrapper
+      .navicon:  img#menubtn(src="img/nav.svg")
+      ul#fullmenu 
+        li: a.top-menu(href="#home"): span.top-menu-text Home
+        li: a.top-menu(href="#story"): span.top-menu-text Our Story
+        li: a.top-menu(href="#photos"): span.top-menu-text Engagement Photos
+        li: a.top-menu(href="#rsvp"): span.top-menu-text RSVP
+        li: a.top-menu(href="#reg"): span.top-menu-text Registry
+          
+    section.frontsplash#home
+      .frontsplashcontainer
+        .fp-row.mainrow
+          .col1-75
+            .container-center-center.main
+              .imgcontain1: img(src="img/logo.svg")
+              .text invite you to share in the 
+              .imgcontain2: img(src="img/banner-front.svg")
+          .col1-25
+            .fp-row.stacked
+              .container-center-center.location
+                .info-big Stonewall Farms
+                .info-sm 3609 67th AVE NORTHWEST
+                  br
+                  | Willmar Minnesota
+                a.directionbtn(href="https://goo.gl/maps/HYKA86fgeKx" target="_blank") 
+                  .btntext See Directions
+                  
+            .fp-row.stacked
+              .container-center-center.date
+                .info-big SEPTEMBER 3, 2016
+                .info-sm Saturday @ 2PM
+                a.directionbtn(href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=X2NvbzNhYzluNmxpNmFiYjU2cGg2OGI5a2NsZ2owYjlvY3BpM2FiOWc2Z3BqNHBiMzcwc204Y3BrNmsga2VsdmluLndvb0Bt&tmsrc=kelvin.woo%40gmail.com" target="_blank")
+                  .btntext Schedule Us In 
+        .fp-row
+          .col1-25.container-center-center.nav  
+            a.fp-nav(href="#story")
+              .navtxt-sm read
+              .navtxt-big The Story
+              .navicon: img(src="img/nav-story.svg")
+          .col1-25.container-center-center.nav
+            a.fp-nav(href="#photos")
+              .navtxt-sm see
+              .navtxt-big Our Pictures
+              .navicon: img(src="img/nav-pic.svg")
+          .col1-25.container-center-center.nav
+            a.fp-nav(href="#rsvp")
+              .navtxt-sm give us
+              .navtxt-big Your Response
+              .navicon: img(src="img/nav-pen.svg")
+          .col1-25.container-center-center.nav
+            a.fp-nav(href="#reg")
+              .navtxt-sm see
+              .navtxt-big Our Registries
+              .navicon: img(src="img/nav-registry.svg")
+    section.para#para1
+      .parallax-container
+        .parallax
+          img(src="gallery/Color-8.jpg")
+        
+    section.timeline#story
+      
+      .col-timeline.desktoponly
+        .blankcanvas
+          img(src="img/banner-timeline.svg")
+        .timelineblock
+          .iconrow
+            .icon: img(src="img/icon-van.svg")
+            .icon: img(src="img/icon-cti.svg")
+            .icon: img(src="img/icon-guitar.svg")
+          .timeline-title Friendship
+          .timeline-desc 
+            p Friendship continued growing after closing out our time as a leadership pair with the Taiwan team. Hannah felt called to rejoin CTI's Fulltime Program for a second year, while Kelvin had already committed himself to another year with CTI. We were placed on opposite teams for our second year. Kelvin with CTI 14:21 and Hannah with CTI 14:22. Traveling opposite coasts, borders and even seas made our the time of hanging out, so fun. There were always so many stories to be told after having toured for months at a time, so hangouts at Grizzley's and Dunn Bros were inevitable.
+            img(src="img/img-postcti.png")
+            
+        .timelineblock
+          .iconrow
+            .icon: img(src="img/icon-flowers.png")
+            .icon: img(src="img/icon-ring.png")
+            .icon: img(src="img/icon-heart.png")
+          .timeline-title The Proposal
+          .timeline-desc 
+            p Now, Kelvin didn't want to mislead Hannah in any way. He shared a timeline with her, which of course made her blush, feel all the butterflies and smile a lot. He told her that if God would be gracious enough to continue blessing the relationship, long distance-dating phase wouldn't have to be forever. On October 27th, Kelvin secretly flew into Richmond, VA to prepare for the next day, the Proposal. On October 28th, woke up to a sweet surprise. Kelvin had snuck in and decorated the dining room with lights strung about, candles lit and a beautiful bouquet of Carnations. He sang and played his guitar and "wooed" Hannah down the stairs with a bouquet of balloons and flower petals. What Hannah didn't know was that Kelvin had shared this sweet moment with with their families and some of their closest friends by live-streaming the entire proposal. By now, you should know, that she said, "Yes!" 
+            img(src="img/img-ringbox.png")
+            
+        .timelineblock.countdown
+          .countdown-numdays#cntdaysleft 119
+          .countdown-sep
+          .countdown-txt DAYS LEFT UNTIL OUR WEDDING
+          
+      .col-timeline.desktoponly
+        .timelineblock
+          .iconrow
+            .icon: img(src="img/icon-hannah.png")
+            .icon: img(src="img/icon-kelvin.png")
+            .icon: img(src="img/icon-taiwan.svg")
+          .timeline-title CTI Taiwan
+          .timeline-desc
+            p Kelvin and Hannah were both involved with CTI Music Ministries, an organization that equips and sends teams around the world to share the love of Christ through music, dramas and stories. 
+
+            p Kelvin was finishing his first year with the CTI Fulltime Program as Hannah, already having completed a year with the CTI Fulltime Program, was finishing her Bachelor's of Science in Audio Engineering. 
+
+            p We were introduced by Paul Vasilko and Chris Reed, the directors as CTI, via Google Hangout on April 22, 2014. The Staff at CTI Music Ministries had selected the two of them to co-lead a team of musicians to Taiwan for 6 weeks. Co-leading a team together gave them a greater understanding of how to work together and support each other. All the while, a sweet friendship was growing. 
+            img(src="img/Taiwan1.jpg")
+        
+        .timelineblock
+          .iconrow
+            .icon: img(src="img/icon-facetime.png")
+            .icon: img(src="img/icon-va.svg")
+            .icon: img(src="img/icon-champaigne.svg")
+          .timeline-title Caribou Coffee, huh?
+          .timeline-desc 
+            p By the time Summer 2015 came around, it was pretty clear that Kelvin and Hannah shared mutual feelings toward each other. They had their official "DTR" conversation at the local, Caribou Coffee. They officially began dating on June 30th, 2015. Both of them so excited, yet so anxious for what the future would hold as long distance was inevitable for them. Hannah transitioned into a Worship Coordinator position at a multi-site church in the Richmond, VA area while Kelvin continued to prepare and train the new CTI Fulltime team, later transitioning back to Toronto. As their lives quickly moved on, so did their feelings for each other. They have definitely made their fair share of efforts to visit each other. These efforts definitely yielded some sweet and memorable moments together. 
+            img(src="img/img-paulalyssa.png")
+        
+        .timelineblock
+          .iconrow
+            .icon: img(src="img/icon-facetime.png")
+            .icon: img(src="img/icon-va.svg")
+            .icon: img(src="img/icon-champaigne.svg")
+          .timeline-title Visas And Weddings!
+          .timeline-desc
+            p Many know that this process post-engagement has been one filled with prayers, paperwork, interviews and a lot of waiting. Kelvin officially received word that his K-1 Fiancé Visa was approved on April 21st, 2015. There was a lot of excitement, running around the house and Instagram photos to document all of the excitement as they finally had word that they could move forward with the wedding. As they continue to prepare for the wedding, there will be a few flights and goodbyes but all that will change in August. Hannah will be driving up to Toronto, Ontario on July 31st to help Kelvin move down to Richmond. He will move into our new place, getting everything settle until the wedding in September. After September 3rd, they will transition into their new life together in Richmond, as Hannah continues her work at PCC and Kelvin transitions into Richmond, continuing his work in Web Design/Development and Engineering. 
+            img(src="img/k1visa.png")
+      
+      .mobileonlystory
+      
+        .blankcanvas
+          img(src="img/banner-timeline.svg")
+        .timelineblock
+          .iconrow
+            .icon: img(src="img/icon-hannah.png")
+            .icon: img(src="img/icon-kelvin.png")
+            .icon: img(src="img/icon-taiwan.svg")
+          .timeline-title CTI Taiwan
+          .timeline-desc
+            p Kelvin and Hannah were both involved with CTI Music Ministries, an organization that equips and sends teams around the world to share the love of Christ through music, dramas and stories. 
+
+            p Kelvin was finishing his first year with the CTI Fulltime Program as Hannah, already having completed a year with the CTI Fulltime Program, was finishing her Bachelor's of Science in Audio Engineering. 
+
+            p We were introduced by Paul Vasilko and Chris Reed, the directors as CTI, via Google Hangout on April 22, 2014. The Staff at CTI Music Ministries had selected the two of them to co-lead a team of musicians to Taiwan for 6 weeks. Co-leading a team together gave them a greater understanding of how to work together and support each other. All the while, a sweet friendship was growing. 
+            img(src="img/Taiwan1.jpg")
+        .timelineblock
+          .iconrow
+            .icon: img(src="img/icon-van.svg")
+            .icon: img(src="img/icon-cti.svg")
+            .icon: img(src="img/icon-guitar.svg")
+          .timeline-title Friendship
+          .timeline-desc 
+            p Friendship continued growing after closing out our time as a leadership pair with the Taiwan team. Hannah felt called to rejoin CTI's Fulltime Program for a second year, while Kelvin had already committed himself to another year with CTI. We were placed on opposite teams for our second year. Kelvin with CTI 14:21 and Hannah with CTI 14:22. Traveling opposite coasts, borders and even seas made our the time of hanging out, so fun. There were always so many stories to be told after having toured for months at a time, so hangouts at Grizzley's and Dunn Bros were inevitable.
+            img(src="img/img-postcti.png")
+        
+        
+        .timelineblock
+          .iconrow
+            .icon: img(src="img/icon-facetime.png")
+            .icon: img(src="img/icon-va.svg")
+            .icon: img(src="img/icon-champaigne.svg")
+          .timeline-title Caribou Coffee, huh?
+          .timeline-desc 
+            p By the time Summer 2015 came around, it was pretty clear that Kelvin and Hannah shared mutual feelings toward each other. They had their official "DTR" conversation at the local, Caribou Coffee. They officially began dating on June 30th, 2015. Both of them so excited, yet so anxious for what the future would hold as long distance was inevitable for them. Hannah transitioned into a Worship Coordinator position at a multi-site church in the Richmond, VA area while Kelvin continued to prepare and train the new CTI Fulltime team, later transitioning back to Toronto. As their lives quickly moved on, so did their feelings for each other. They have definitely made their fair share of efforts to visit each other. These efforts definitely yielded some sweet and memorable moments together. 
+            img(src="img/img-paulalyssa.png")
+        
+        .timelineblock
+          .iconrow
+            .icon: img(src="img/icon-flowers.png")
+            .icon: img(src="img/icon-ring.png")
+            .icon: img(src="img/icon-heart.png")
+          .timeline-title The Proposal
+          .timeline-desc 
+            p Now, Kelvin didn't want to mislead Hannah in any way. He shared a timeline with her, which of course made her blush, feel all the butterflies and smile a lot. He told her that if God would be gracious enough to continue blessing the relationship, long distance-dating phase wouldn't have to be forever. On October 27th, Kelvin secretly flew into Richmond, VA to prepare for the next day, the Proposal. On October 28th, woke up to a sweet surprise. Kelvin had snuck in and decorated the dining room with lights strung about, candles lit and a beautiful bouquet of Carnations. He sang and played his guitar and "wooed" Hannah down the stairs with a bouquet of balloons and flower petals. What Hannah didn't know was that Kelvin had shared this sweet moment with with their families and some of their closest friends by live-streaming the entire proposal. By now, you should know, that she said, "Yes!" 
+            img(src="img/img-ringbox.png")
+        .timelineblock
+          .iconrow
+            .icon: img(src="img/icon-facetime.png")
+            .icon: img(src="img/icon-va.svg")
+            .icon: img(src="img/icon-champaigne.svg")
+          .timeline-title Visas And Weddings!
+          .timeline-desc
+            p Many know that this process post-engagement has been one filled with prayers, paperwork, interviews and a lot of waiting. Kelvin officially received word that his K-1 Fiancé Visa was approved on April 21st, 2015. There was a lot of excitement, running around the house and Instagram photos to document all of the excitement as they finally had word that they could move forward with the wedding. As they continue to prepare for the wedding, there will be a few flights and goodbyes but all that will change in August. Hannah will be driving up to Toronto, Ontario on July 31st to help Kelvin move down to Richmond. He will move into our new place, getting everything settle until the wedding in September. After September 3rd, they will transition into their new life together in Richmond, as Hannah continues her work at PCC and Kelvin transitions into Richmond, continuing his work in Web Design/Development and Engineering. 
+            img(src="img/k1visa.png")
+             
+        .timelineblock.countdown
+          .countdown-numdays#cntdaysleft 119
+          .countdown-sep
+          .countdown-txt DAYS LEFT UNTIL OUR WEDDING
+          
+
+        
+    section.picture#photos
+      .credits
+        a(href="http://www.commonsparkmediablog.com/" target="_blank") Common Spark Media
+      .sectiontitle 
+        img(src="img/banner-pictures.svg")
+      .picturegallery.my-slider
+        ul
+          li: img(src="gallery/Color-37.jpg")
+          li: img(src="gallery/Color-42.jpg")
+          li: img(src="gallery/Color-56.jpg")
+          li: img(src="gallery/Color-60.jpg")
+          li: img(src="gallery/Color-62.jpg")
+          li: img(src="gallery/Color-71.jpg")
+          li: img(src="gallery/Color-83.jpg")
+          li: img(src="gallery/Color-86.jpg")
+          li: img(src="gallery/Color-92.jpg")
+          li: img(src="gallery/Color-105.jpg")
+          li: img(src="gallery/Color-133.jpg")
+      .arrowleft
+      .arrowright
+    section.rsvp#rsvp
+      .responsecard
+        .rsvpheader: img(src="img/banner-rsvp.svg")
+        .notes
+          p Please RSVP by July 15, 2016. 
+          p We look forward to seeing you there!
+        
+        .form
+          form#myform(method="post",action="mail_handler.php")
+            .section1form
+              
+              .formbox 
+                label.formlabel(for="fullname") Your Full Name
+                input.required#fullname(type="text" name="fullname") 
+              .formbox
+                label.formlabel(for="emailaddress") Your Email Address
+                input.required#emailaddress(type="text" name="emailaddress")
+
+              .formbox.showarrow
+                label.formlabel Will You Be Attending?
+                select.dropdown.required#attendance(name="attendance")
+                    option(value="") Choose One ...
+                    option(value="Yes") Yes
+                    option(value="No") No
+              .formbox.showarrow#extraguestsbox
+                label.formlabel How Many Extra Guests Will Be With You? 
+                select.dropdown.required.ignore#extraguests(name="extraguests")
+                    option(value="") Choose One ...
+                    option(value="0") 0
+                    option(value="1") 1
+                    option(value="2") 2
+                    option(value="3") 3
+                    option(value="4") 4
+                    option(value="5") 5
+
+            .section2form
+              .formrow
+                .formrowcellfull#foodmenu
+                  p: strong MENU OPTIONS
+                  p 
+                    strong: i STUFFED BASIL AND HERB CHICKEN BREAST: 
+                    | STUFFED CHICKEN BREAST WITH FRESH BASIL AND CREAM CHEESE. SERVED ON A BED OF WILD RICE, TOPPED WITH SAUTEED RED ONION, MUSHROOMS AND GARLIC CREAM SAUCE.
+                  p
+                    strong: i JIM BEAM CHOICE TOP SERLOIN: 
+                    | CHARBROILED CHOICE BEEF WITH SWEET BOURBON SAUCE
+                  p
+                    strong: i MONTRÉAL PORK CHOP: 
+                    | SEVEN OUNCE BONELESS, BACON-WRAPPED PORK CHOP GRILLED WITH MONTRÉAL SEASONING. SERVED WITH A MUSHROOM WHITE WINE DEMI SAUCE
+                  p
+                    strong: i VEGETABLE LASAGNA: 
+                    | PLAYERS OF THREE CHEESE VEGETARIAN ITALIAN LASAGNA
+                  p
+                    strong: i KIDS MEAL: 
+                    | CHICKEN STRIPS AND FRENCH FRIES
+              .formrow#guest1row
+                .formrowcell 
+                  label.formlabel(for="guest1name") Guest #1 Full Name
+                  input.required.ignore#guest1name(type="text", name="guest1name") 
+                .formrowcell.showarrow
+                  label.formlabel(for="guest1meal") Guest #1 Meal Choice
+                  select.required.ignore.dropdown#guest1meal(name="guest1meal")
+                    option(value="") Choose One ...
+                    option(value="chicken") Chicken
+                    option(value="beef") Beef
+                    option(value="pork") Pork
+                    option(value="veggie") Vegetarian
+                    option(value="kids") Kids
+              .formrow#guest2row
+                .formrowcell 
+                  label.formlabel(for="guest2name") Guest #2 Full Name
+                  input.required.ignore#guest2name(type="text", name="guest2name")
+                .formrowcell.showarrow
+                  label.formlabel(for="guest2meal") Guest #2 Meal Choice
+                  select.required.ignore.dropdown#guest2meal(name="guest2meal")
+                    option(value="") Choose One ...
+                    option(value="chicken") Chicken
+                    option(value="beef") Beef
+                    option(value="pork") Pork
+                    option(value="veggie") Vegetarian
+                    option(value="kids") Kids
+              .formrow#guest3row
+                .formrowcell 
+                  label.formlabel(for="guest3name") Guest #3 Full Name
+                  input.required.ignore#guest3name(type="text", name="guest3name")
+                .formrowcell.showarrow
+                  label.formlabel(for="guest3meal") Guest #3 Meal Choice
+                  select.required.ignore.dropdown#guest3meal(name="guest3meal")
+                    option(value="") Choose One ...
+                    option(value="chicken") Chicken
+                    option(value="beef") Beef
+                    option(value="pork") Pork
+                    option(value="veggie") Vegetarian
+                    option(value="kids") Kids
+              .formrow#guest4row
+                .formrowcell 
+                  label.formlabel(for="guest4name") Guest #4 Full Name
+                  input.required.ignore#guest4name(type="text", name="guest4name")
+                .formrowcell.showarrow
+                  label.formlabel(for="guest4meal") Guest #4 Meal Choice
+                  select.required.ignore.dropdown#guest4meal(name="guest4meal")
+                    option(value="") Choose One ...
+                    option(value="chicken") Chicken
+                    option(value="beef") Beef
+                    option(value="pork") Pork
+                    option(value="veggie") Vegetarian
+                    option(value="kids") Kids
+              .formrow#guest5row
+                .formrowcell 
+                  label.formlabel(for="guest5name") Guest #5 Full Name
+                  input.required.ignore#guest5name(type="text", name="guest5name")  
+                .formrowcell.showarrow
+                  label.formlabel(for="guest5meal") Guest #5 Meal Choice
+                  select.dropdown.required.ignore#guest5meal(name="guest5meal")
+                    option(value="") Choose One ...
+                    option(value="chicken") Chicken
+                    option(value="beef") Beef
+                    option(value="pork") Pork
+                    option(value="veggie") Vegetarian
+                    option(value="kids") Kids 
+              .formrow#guest6row
+                .formrowcell 
+                  label.formlabel(for="guest6name") Guest #6 Full Name
+                  input.required.ignore#guest6name(type="text", name="guest6name")  
+                .formrowcell.showarrow
+                  label.formlabel(for="guest6meal") Guest #6 Meal Choice
+                  select.required.ignore.dropdown#guest6meal(name="guest6meal")
+                    option(value="") Choose One ...
+                    option(value="chicken") Chicken
+                    option(value="beef") Beef
+                    option(value="pork") Pork
+                    option(value="veggie") Vegetarian
+                    option(value="kids") Kids 
+              .formrow
+                .formrowcellfull
+                  label.formlabel(for="allergies") Please list any food allergies
+                  textarea#allergies(name="allergies")
+
+
+            .section3form
+              .formrow
+                .formrowcellfull
+                  label.formlabel(for="message") Leave A Message for Hannah and Kelvin
+                  textarea#message(name="message")
+              .formrow
+                input(type="submit")
+    section.registry#reg
+      .sectiontitle 
+        img(src="img/banner-registry.svg")  
+      .regdesc
+        p YOUR PRESENCE AT OUR WEDDING IS OUR GREATIST GIFT. SHOULD YOU WANT TO HELP US CELEBRATE WITH A GIFT WE ARE REGISTERED AT THE FOLLOWING RETAILERS:
+      .retailrow
+        .retail
+          a.cratebarrel(href="http://www.crateandbarrel.com/gift-registry/kelvin-woo-and-hannah-olson/r5423485", target="_blank")
+            
+        .retail
+          a.target(href="http://www.target.com/gift-registry/registry/GtPLC2W_BYSziAc6_3sIgA?lnk=copiedLink", target="_blank")
+            
+        .retail
+          a.rei(href="https://www.rei.com/GiftRegistryDetails/GR122368798", target="_blank")
+            
+    section.footer
+      p Website created by 
+        a.wookie(href="#") Wookie Studios
+          
+    script( src='js/jquery.min.js')
+    script( src='http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js')
+    script( src='js/materialize.min.js')
+    script( src='js/unslider-min.js')
+    script( src='js/main.js')
+
+      
+    
